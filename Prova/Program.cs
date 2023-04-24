@@ -5,15 +5,16 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        //Atv1();
-        //Prossiga();
+        Console.WriteLine("Thieres Marcos de Almeida\n");
+        Atv1();
+        Prossiga();
         Atv2();
-        //Prossiga();
-        //Atv3();
-        //Prossiga();
-        //Atv4();
-        //Prossiga();
-        //Atv5();
+        Prossiga();
+        Atv3();
+        Prossiga();
+        Atv4();
+        Prossiga();
+        Atv5();
     }
 
 
@@ -59,6 +60,7 @@ public class Program
 
     public static void Atv2()
     {
+        Console.Write("Atividade 2:");
         List<string> Nomes = new List<string>();
         for (int i = 0; i < 8; i++)
         {
@@ -93,6 +95,7 @@ public class Program
     }
     public static void Atv3()
     {
+        Console.Write("Atividade 3:");
         Console.WriteLine("a) Comprexidade o(n)");
         Console.WriteLine("b) Comprexidade o(n)");
         Console.WriteLine("c) Comprexidade o(n²)");
@@ -100,7 +103,7 @@ public class Program
 
     public static void Atv4()
     {
-
+        Console.Write("Atividade 4:");
         // Ler a altura da pessoa 
         Console.Write("Digite a altura da pessoa (em metros): ");
         double altura = double.Parse(Console.ReadLine());
