@@ -5,15 +5,15 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Atv1();
-        Prossiga();
+        //Atv1();
+        //Prossiga();
         Atv2();
-        Prossiga();
-        Atv3();
-        Prossiga();
-        Atv4();
-        Prossiga();
-        Atv5();
+        //Prossiga();
+        //Atv3();
+        //Prossiga();
+        //Atv4();
+        //Prossiga();
+        //Atv5();
     }
 
 
@@ -70,11 +70,12 @@ public class Program
 
         static void Sorteio(List<string> nomes)
         {
-            List<string> nomeSorteado = nomes;
-            //Random sorteio = new Random();
+            IEnumerable<string> nomeSorteado = nomes;
+            Random sorteio = new Random();
+            nomeSorteado = nomeSorteado.OrderBy(x => sorteio.Next(8));
             for (int i = 0; i < nomes.Count; i++)
             {
-                Console.WriteLine($"{nomes[i]} -> {nomeSorteado[i]}");
+                Console.WriteLine($"{nomes[i]} -> {nomeSorteado.ToList()[i]}");
             }
         }
 
@@ -132,7 +133,7 @@ public class Program
             "1 - falta de tratamento de erros(try catch)\n" +
             "2 - o programa para se não for marcado o sexo sem dar outra chance\n" +
             "3 - o calculo do homem e da mulher estão trocados\n" +
-            "4 - \n" +
+            "4 - o mais comum e apenas a unidade da medida ao contrario de 'em metros'\n" +
             "5 - \n"
         );
     }
